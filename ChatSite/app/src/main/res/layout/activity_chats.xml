@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chats_profileimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/chats_profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="28dp"
+        android:text="Display Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toEndOf="@+id/chats_profileimg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chats_list_of_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chats_floatingActionButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chats_profileimg"
+        android:padding="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/chats_floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@android:drawable/ic_media_play"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:fabSize="normal" />
+
+    <EditText
+        android:id="@+id/chats_edittext"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chats_floatingActionButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="New Message"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/chats_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chats_profileimg"
+        android:layout_alignStart="@+id/chats_profileName"
+        android:text="Offline"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

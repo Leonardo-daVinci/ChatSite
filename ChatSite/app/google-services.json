@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "819913728734",
+    "firebase_url": "https://chatsite-4597b.firebaseio.com",
+    "project_id": "chatsite-4597b",
+    "storage_bucket": "chatsite-4597b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819913728734:android:2df62061d66f2b70",
+        "android_client_info": {
+          "package_name": "apps.nocturnal.com.chatsite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819913728734-9nbmo2gjrpnv88425ni9usnlm966lu6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.nocturnal.com.chatsite",
+            "certificate_hash": "f914798b15db528120660020b7b9fb31d36aa87a"
+          }
+        },
+        {
+          "client_id": "819913728734-6lrq9rbkf0p53edhgarkd5mp407hme2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5vn35Yas9aJ6QER_mfTbdzHywIWZaPPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "819913728734-6lrq9rbkf0p53edhgarkd5mp407hme2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
